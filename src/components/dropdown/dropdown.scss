@@ -1,0 +1,109 @@
+.dropdown-container, .react-select-container[class*="-container"] {
+    text-align: left;
+    position: relative;
+    border-radius: 16px;
+    margin: 50px 20px 0 30px;
+    max-width:535px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    min-width:300px;
+    
+    .dropdown-tool{
+        margin-top: 8px;
+    }
+    .dropdown-selected-value{
+        display: flex;
+        svg{
+            position: relative;
+            right:6px;
+        }
+    }
+  }
+
+  .dropdown-container{
+    background: var(--color-black-opaque);
+  }
+  
+  .dropdown-input {
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    height: 48px;
+  }
+
+  .react-select-container div[class*="-placeholder"], .react-select-container div[class*="-indicatorContainer"]{
+    color: var(--color-black);
+  }
+  
+  .react-select-container div[class*="-control"]{
+    border-radius: 16px;
+    border-style: none;
+    border-width: 0;
+    box-shadow: none;
+    padding:0 16px;
+    height: 48px;
+    color: var(--color-black);
+  }
+
+  .react-select-container span[class*="-indicatorSeparator"]{
+    background-color:transparent;
+    width:0;
+  }
+  .react-select-container div[class*="-ValueContainer"]{
+    padding:0;
+  }
+  .react-select-container div[class*="-menu"]{
+    display: flex;
+    filter: drop-shadow(0px 4px 30px var(--color-black-opaque1));
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    filter: drop-shadow(0px 4px 30px var(--color-black-opaque1));
+    width: 100%;
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 150px;
+    background-color: var(--color-white);
+    z-index: 99;
+  }
+  
+  .dropdown-item {
+    padding: 11px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    svg {
+        width:22px;
+        height: 22px;
+    }
+    .dropdown-item-content{
+        margin-left: 10px;
+        .dropdown-item-name {
+            color: var(--color-light-grey);
+            font-weight: 400;
+        }
+        .dropdown-item-label {
+            color: var(--color-light-black);
+        }
+    }
+    
+  }
+
+  .dropdown-container:focus,  .dropdown-item:hover, 
+  .react-select-container[class*="-container"]:focus, 
+  .react-select-container div[class*="-control"]:hover{
+    background: var(--color-green);
+  }
+  .blue {
+        fill: var(--color-blue);
+     }
+        
+  .green {
+        fill: var(--color-green);    
+}

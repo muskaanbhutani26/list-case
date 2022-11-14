@@ -1,0 +1,10 @@
+.flex-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-content{
+    flex: 50%;
+    margin: 20px;
+}
