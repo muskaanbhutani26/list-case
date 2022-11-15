@@ -8,7 +8,6 @@ const Options = props => (
             <div
               key={props.data.value}
               className="dropdown-item"
-              role="option"
             >
               <span><Icon name="ellipse" className={props.data.color}/></span>
               <div className="dropdown-item-content">

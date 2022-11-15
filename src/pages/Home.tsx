@@ -28,10 +28,8 @@ const Home = () => {
 
     const modifyResponse = (breedList: IBreed[]) => {
         const breedDogs = getTransformBreeds(breedList)
-        console.log(breedDogs)
           if(breedDogs.length > 0) {
                 setIsLoading(false)
-                console.log(breedDogs)
                 setBreeds(breedDogs)
           }
     }
