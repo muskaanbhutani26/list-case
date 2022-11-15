@@ -2,10 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+in this project, added two dropdown one with custom and one with usage of react-select.
+
+
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory,  you can run first :
+### `npm install`
 
+and then 
 ### `npm start`
 
 Runs the app in the development mode.\
